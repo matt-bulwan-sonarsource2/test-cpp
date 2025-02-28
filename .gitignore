@@ -1,6 +1,7 @@
 # Dot files, disallow by default, and enable explicitly
 \.*
-!\.azure-pipelines
+!\.azure-pipelinea
+!\.sonarcloud.properties
 !\.bazelci
 !\.bazelignore
 !\.bazelrc
