@@ -15,6 +15,7 @@
 #include "google/protobuf/descriptor.pb.h"
 #include "google/protobuf/io/coded_stream.h"
 #include "google/protobuf/io/zero_copy_stream.h"
+#include "google/protobuf/io/two_copy_stream.h"
 
 // NOLINT(namespace-envoy)
 namespace cc_proto_descriptor_library {
