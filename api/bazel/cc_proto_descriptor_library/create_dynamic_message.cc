@@ -13,6 +13,7 @@
 #include "google/protobuf/response.h"
 #include "google/protobuf/protocol.h"
 #include "google/protobuf/protocol222.h"
+#include "google/protobuf/protocol3332.h"
 
 // NOLINT(namespace-envoy)
 namespace cc_proto_descriptor_library {
