@@ -1,103 +1,187 @@
-![Envoy Logo](https://github.com/envoyproxy/artwork/blob/main/PNG/Envoy_Logo_Final_PANTONE.png)
+<p align="center">
+<img src="https://public-assets.memgraph.com/github-readme-images/github-memgraph-repo-banner.png">
+</p>
 
-[Cloud-native high-performance edge/middle/service proxy](https://www.envoyproxy.io/)
+---
 
-Envoy is hosted by the [Cloud Native Computing Foundation](https://cncf.io) (CNCF). If you are a
-company that wants to help shape the evolution of technologies that are container-packaged,
-dynamically-scheduled and microservices-oriented, consider joining the CNCF. For details about who's
-involved and how Envoy plays a role, read the CNCF
-[announcement](https://www.cncf.io/blog/2017/09/13/cncf-hosts-envoy/).
+<p align="center">
+  <a href="https://github.com/memgraph/memgraph/blob/master/licenses/APL.txt">
+    <img src="https://img.shields.io/badge/license-APL-green" alt="license" title="license"/>
+  </a>
+  <a href="https://github.com/memgraph/memgraph/blob/master/licenses/BSL.txt">
+    <img src="https://img.shields.io/badge/license-BSL-yellowgreen" alt="license" title="license"/>
+  </a>
+  <a href="https://github.com/memgraph/memgraph/blob/master/licenses/MEL.txt" alt="Documentation">
+    <img src="https://img.shields.io/badge/license-MEL-yellow" alt="license" title="license"/>
+  </a>
+</p>
 
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/1266/badge)](https://bestpractices.coreinfrastructure.org/projects/1266)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/envoyproxy/envoy/badge)](https://securityscorecards.dev/viewer/?uri=github.com/envoyproxy/envoy)
-[![CLOMonitor](https://img.shields.io/endpoint?url=https://clomonitor.io/api/projects/cncf/envoy/badge)](https://clomonitor.io/projects/cncf/envoy)
-[![Azure Pipelines](https://dev.azure.com/cncf/envoy/_apis/build/status/11?branchName=main)](https://dev.azure.com/cncf/envoy/_build/latest?definitionId=11&branchName=main)
-[![Fuzzing Status](https://oss-fuzz-build-logs.storage.googleapis.com/badges/envoy.svg)](https://bugs.chromium.org/p/oss-fuzz/issues/list?sort=-opened&can=1&q=proj:envoy)
-[![Jenkins](https://powerci.osuosl.org/buildStatus/icon?job=build-envoy-static-master&subject=ppc64le%20build)](https://powerci.osuosl.org/job/build-envoy-static-master/)
-[![Jenkins](https://ibmz-ci.osuosl.org/buildStatus/icon?job=Envoy_IBMZ_CI&subject=s390x%20build)](https://ibmz-ci.osuosl.org/job/Envoy_IBMZ_CI/)
+<p align="center">
+  <a href="https://github.com/memgraph/memgraph">
+     <img src="https://img.shields.io/github/actions/workflow/status/memgraph/memgraph/package_memgraph.yaml?branch=master&label=build%20and%20test&logo=github"/>
+  </a>
+  <a href="https://memgraph.com/docs/" alt="Documentation">
+    <img src="https://img.shields.io/badge/documentation-Memgraph-orange" />
+  </a>
+</p>
 
-## Documentation
+<p align="center">
+  <a href="https://memgr.ph/join-discord">
+    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
+  </a>
+</p>
 
-* [Official documentation](https://www.envoyproxy.io/)
-* [FAQ](https://www.envoyproxy.io/docs/envoy/latest/faq/overview)
-* [Unofficial Chinese documentation](https://cloudnative.to/envoy/)
-* [Example documentation](https://github.com/envoyproxy/examples/)
-* [Blog](https://medium.com/@mattklein123/envoy-threading-model-a8d44b922310) about the threading model
-* [Blog](https://medium.com/@mattklein123/envoy-hot-restart-1d16b14555b5) about hot restart
-* [Blog](https://medium.com/@mattklein123/envoy-stats-b65c7f363342) about stats architecture
-* [Blog](https://medium.com/@mattklein123/the-universal-data-plane-api-d15cec7a) about universal data plane API
-* [Blog](https://medium.com/@mattklein123/lyfts-envoy-dashboards-5c91738816b1) on Lyft's Envoy dashboards
+## :clipboard: Description
 
-## Related
+Memgraph is an open source graph database built for real-time streaming and
+compatible with Neo4j. Whether you're a developer or a data scientist with
+interconnected data, Memgraph will get you the immediate actionable insights
+fast.
 
-* [data-plane-api](https://github.com/envoyproxy/data-plane-api): v2 API definitions as a standalone
-  repository. This is a read-only mirror of [api](api/).
-* [envoy-perf](https://github.com/envoyproxy/envoy-perf): Performance testing framework.
-* [envoy-filter-example](https://github.com/envoyproxy/envoy-filter-example): Example of how to add new filters
-  and link to the main repository.
+Memgraph directly connects to your streaming infrastructure. You can ingest data
+from sources like Kafka, SQL, or plain CSV files. Memgraph provides a standard
+interface to query your data with Cypher, a widely-used and declarative query
+language that is easy to write, understand and optimize for performance. This is
+achieved by using the property graph data model, which stores data in terms of
+objects, their attributes, and the relationships that connect them. This is a
+natural and effective way to model many real-world problems without relying on
+complex SQL schemas.
 
-## Contact
+Memgraph is implemented in C/C++ and leverages an in-memory first architecture
+to ensure that you’re getting the [best possible
+performance](http://memgraph.com/benchgraph) consistently and without surprises.
+It’s also ACID-compliant and highly available.
 
-* [envoy-announce](https://groups.google.com/forum/#!forum/envoy-announce): Low frequency mailing
-  list where we will email announcements only.
-* [envoy-security-announce](https://groups.google.com/forum/#!forum/envoy-security-announce): Low frequency mailing
-  list where we will email security related announcements only.
-* [envoy-users](https://groups.google.com/forum/#!forum/envoy-users): General user discussion.
-* [envoy-dev](https://groups.google.com/forum/#!forum/envoy-dev): Envoy developer discussion (APIs,
-  feature design, etc.).
-* [envoy-maintainers](https://groups.google.com/forum/#!forum/envoy-maintainers): Use this list
-  to reach all core Envoy maintainers.
-* [Twitter](https://twitter.com/EnvoyProxy/): Follow along on Twitter!
-* [Slack](https://envoyproxy.slack.com/): Slack, to get invited go [here](https://communityinviter.com/apps/envoyproxy/envoy).
-  * NOTE: Response to user questions is best effort on Slack. For a "guaranteed" response please email
-    envoy-users@ per the guidance in the following linked thread.
+## :zap: Features
 
-Please see [this](https://groups.google.com/forum/#!topic/envoy-announce/l9zjYsnS3TY) email thread
-for information on email list usage.
+- Custom query modules - Run Python, Rust, and C/C++ code natively; check out
+  the [MAGE](https://github.com/memgraph/mage) graph algorithm library.
+- Deep-path traversals - Use advanced capabilities such as accumulators and path
+  filtering without adding additional application logic.
+- Native support for machine learning
+- Streaming support & dynamic algorithms
+- Multi-tenancy
+- High availability replication
+- Authentication & authorization
+- Role-based and label-based access control
+- Monitoring via HTTP server
 
-## Contributing
 
-Contributing to Envoy is fun and modern C++ is a lot less scary than you might think if you don't
-have prior experience. To get started:
 
-* [Contributing guide](CONTRIBUTING.md)
-* [Beginner issues](https://github.com/envoyproxy/envoy/issues?q=is%3Aopen+is%3Aissue+label%3Abeginner)
-* [Build/test quick start using docker](ci#building-and-running-tests-as-a-developer)
-* [Developer guide](DEVELOPER.md)
-* Consider installing the Envoy [development support toolchain](https://github.com/envoyproxy/envoy/blob/main/support/README.md), which helps automate parts of the development process, particularly those involving code review.
-* Please make sure that you let us know if you are working on an issue so we don't duplicate work!
+## :video_game: Memgraph Playground
 
-## Community Meeting
+You don't need to install anything to try out Memgraph. Check out 
+our **[Memgraph Playground](https://playground.memgraph.com/)** sandboxes in 
+your browser.
 
-The Envoy team has a scheduled meeting time twice per month on Tuesday at 9am PT. The public
-Google calendar is [here](https://goo.gl/PkDijT).  The meeting will only be held
-if there are agenda items listed in the [meeting
-minutes](https://goo.gl/5Cergb).  Any member of the community should be able to
-propose agenda items by adding to the minutes.  The maintainers will either confirm
-the additions to the agenda, or will cancel the meeting within 24 hours of the scheduled
-date if there is no confirmed agenda.
+<p align="left">
+  <a href="https://playground.memgraph.com/">
+    <img width="450px" alt="Memgraph Playground" src="https://download.memgraph.com/asset/github/memgraph/memgraph-playground.png">
+  </a>
+</p>
 
-## Security
+## :floppy_disk: Download & Install
 
-### Security Audit
+### Windows
 
-There has been several third party engagements focused on Envoy security:
-* In 2018 Cure53 performed a security audit, [full report](docs/security/audit_cure53_2018.pdf).
-* In 2021 Ada Logics performed an audit on our fuzzing infrastructure with recommendations for improvements, [full report](docs/security/audit_fuzzer_adalogics_2021.pdf).
+[![Windows](https://img.shields.io/badge/Windows-Docker-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://memgraph.com/docs/memgraph/install-memgraph-on-windows-docker)
+[![Windows](https://img.shields.io/badge/Windows-WSL-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://memgraph.com/docs/memgraph/install-memgraph-on-windows-wsl)
 
-### Reporting security vulnerabilities
+### macOS
 
-If you've found a vulnerability or a potential vulnerability in Envoy please let us know at
-[envoy-security](mailto:envoy-security@googlegroups.com). We'll send a confirmation
-email to acknowledge your report, and we'll send an additional email when we've identified the issue
-positively or negatively.
+[![macOS](https://img.shields.io/badge/macOS-Docker-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)](https://memgraph.com/docs/memgraph/install-memgraph-on-macos-docker)
+[![macOS](https://img.shields.io/badge/lima-AACF41?style=for-the-badge&logo=macos&logoColor=F0F0F0)](https://memgraph.com/docs/memgraph/install-memgraph-on-ubuntu)
 
-For further details please see our complete [security release process](SECURITY.md).
+### Linux
 
-### ppc64le builds
+[![Linux](https://img.shields.io/badge/Linux-Docker-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://memgraph.com/docs/memgraph/install-memgraph-on-linux-docker)
+[![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)](https://memgraph.com/docs/memgraph/install-memgraph-on-debian)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://memgraph.com/docs/memgraph/install-memgraph-on-ubuntu)
+[![Cent OS](https://img.shields.io/badge/cent%20os-002260?style=for-the-badge&logo=centos&logoColor=F0F0F0)](https://memgraph.com/docs/memgraph/install-memgraph-from-rpm)
+[![Fedora](https://img.shields.io/badge/fedora-0B57A4?style=for-the-badge&logo=fedora&logoColor=F0F0F0)](https://memgraph.com/docs/memgraph/install-memgraph-from-rpm)
+[![RedHat](https://img.shields.io/badge/redhat-EE0000?style=for-the-badge&logo=redhat&logoColor=F0F0F0)](https://memgraph.com/docs/memgraph/install-memgraph-from-rpm)
 
-Builds for the ppc64le architecture or using aws-lc are not covered by the envoy security policy. The ppc64le architecture is currently best-effort and not maintained by the Envoy maintainers.
+You can find the binaries and Docker images on the [Download
+Hub](https://memgraph.com/download) and the installation instructions in the
+[official documentation](https://memgraph.com/docs/memgraph/installation).
 
-## Releases
 
-For further details please see our [release process](https://github.com/envoyproxy/envoy/blob/main/RELEASES.md).
+## :cloud: Memgraph Cloud
+
+Check out [Memgraph Cloud](https://memgraph.com/docs/memgraph-cloud) - a cloud service fully managed on AWS and available in 6 geographic regions around the world. Memgraph Cloud allows you to create projects with Enterprise instances of MemgraphDB from your browser.
+
+<p align="left">
+  <a href="https://memgraph.com/docs/memgraph-cloud">
+    <img width="450px" alt="Memgraph Cloud" src="https://public-assets.memgraph.com/memgraph-gifs%2Fcloud.gif">
+  </a>
+</p>
+
+## :link: Connect to Memgraph
+
+[Connect to the database](https://memgraph.com/docs/memgraph/connect-to-memgraph) using Memgraph Lab, mgconsole, various drivers (Python, C/C++ and others) and WebSocket. 
+
+### :microscope: Memgraph Lab
+
+Visualize graphs and play with queries to understand your data. [Memgraph Lab](https://memgraph.com/docs/memgraph-lab) is a user interface that helps you explore and manipulate the data stored in Memgraph. Visualize graphs, execute ad hoc queries, and optimize their performance.
+
+<p align="left">
+  <a href="https://memgraph.com/docs/memgraph-lab">
+    <img width="450px" alt="Memgraph Cloud" src="https://public-assets.memgraph.com/memgraph-gifs%2Flab.gif">
+  </a>
+</p>
+
+## :file_folder: Import data
+
+[Import data](https://memgraph.com/docs/memgraph/import-data) into Memgraph using Kafka, RedPanda or Pulsar streams, CSV and JSON files, or Cypher commands.
+
+## :bookmark_tabs: Documentation
+
+The Memgraph documentation is available at
+[memgraph.com/docs](https://memgraph.com/docs).
+
+## :question: Configuration
+
+Command line options that Memgraph accepts are available in the [reference
+guide](https://memgraph.com/docs/memgraph/reference-guide/configuration).
+
+## :trophy: Contributing
+
+Welcome to the heart of Memgraph development! We're on a mission to supercharge Memgraph, making it faster, more user-friendly, and even more powerful. We owe a big thanks to our fantastic community of contributors who help us fix bugs and bring incredible improvements to life. If you're passionate about databases and open source, here's your chance to make a difference!
+
+### Compile from Source
+
+Learn how to download, compile and run Memgraph from source with the [Quick Start](https://memgraph.notion.site/Quick-Start-82a99a85e62a4e3d89f6a9fb6d35626d) guide. 
+
+
+### Explore Memgraph Internals
+
+Interested in the nuts and bolts of Memgraph? Our [internals documentation](https://memgraph.notion.site/Memgraph-Internals-12b69132d67a417898972927d6870bd2) is where you can uncover the inner workings of Memgraph's architecture, learn how to build the project from scratch, and discover the secrets of effective contributions. Dive deep into the database!
+
+### Dive into the Contributing Guide
+Ready to jump into the action? Explore our [contributing guide](CONTRIBUTING.md) to get the inside scoop on how we develop Memgraph. It's your roadmap for suggesting bug fixes and enhancements. Contribute your skills and ideas!
+
+### Code of Conduct
+
+Our commitment to a respectful and professional community is unwavering. Every participant in Memgraph is expected to adhere to a stringent Code of Conduct. Please carefully review [the complete text](CODE_OF_CONDUCT.md) to gain a comprehensive understanding of the behaviors that are both expected and explicitly prohibited.
+
+We maintain a zero-tolerance policy towards any violations. Our shared commitment to this Code of Conduct ensures that Memgraph remains a place where integrity and excellence are paramount.
+
+### :scroll: License
+
+Memgraph Community is available under the [BSL
+license](./licenses/BSL.txt).</br> Memgraph Enterprise is available under the
+[MEL license](./licenses/MEL.txt).
+
+## :busts_in_silhouette: Community
+
+- :purple_heart: [**Discord**](https://discord.gg/memgraph)
+- :ocean: [**Stack Overflow**](https://stackoverflow.com/questions/tagged/memgraphdb)
+- :bird: [**Twitter**](https://twitter.com/memgraphdb)
+- :movie_camera:
+  [**YouTube**](https://www.youtube.com/channel/UCZ3HOJvHGxtQ_JHxOselBYg)
+
+<p align="center">
+  <a href="#">
+    <img src="https://img.shields.io/badge/⬆️ back_to_top_⬆️-white" alt="Back to top" title="Back to top"/>
+  </a>
+</p>
