@@ -13,8 +13,8 @@
 #include <cstdint>
 
 #include "global_memory_control.hpp"
-#include "query_memory_control.hpp"
 #include "utils/memory_tracker.hpp"
+#include "query_memory_control.hpp"
 #include "utils/logging.hpp"
 
 #if USE_JEMALLOC
