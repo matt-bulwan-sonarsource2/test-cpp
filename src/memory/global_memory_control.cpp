@@ -14,8 +14,8 @@
 
 #include "global_memory_control.hpp"
 #include "query_memory_control.hpp"
-#include "utils/logging.hpp"
 #include "utils/memory_tracker.hpp"
+#include "utils/logging.hpp"
 
 #if USE_JEMALLOC
 #include "jemalloc/jemalloc.h"
