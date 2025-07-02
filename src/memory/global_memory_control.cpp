@@ -12,9 +12,8 @@
 #include <atomic>
 #include <cstdint>
 
+#include "utils/memory_tracker.hpp"
 #include "global_memory_control.hpp"
-#include "utils/memory_tracker.hpp"
-#include "utils/memory_tracker.hpp"
 #include "query_memory_control.hpp"
 #include "utils/logging.hpp"
 
