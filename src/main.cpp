@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    char str[98];
+    char str[92];
     int i, vowels, consonants, digits;
 
     vowels = consonants = digits = 0;
